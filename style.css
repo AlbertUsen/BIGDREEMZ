@@ -123,6 +123,7 @@ body{
     text-align: center;
     padding: 10px 0px;
     height: fit-content;
+    border: 1px solid grey;
     /* width: fit-content; */
     
 }
@@ -515,6 +516,43 @@ h3{
     
     
 }
+.columns:nth-child(1){
+    animation: fadeLeft 0.4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    transition: transform 0.4s linear;
+}
+.columns:nth-child(2){
+    animation: headerFade 0.4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    transition: transform 0.4s linear;
+}
+.columns:nth-child(3){
+    animation: fadeRight 0.4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    transition: transform 0.4s linear;
+}
+.columns:nth-child(4){
+    animation: fadeLeft 0.4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    transition: transform 0.4s linear;
+}
+.columns:nth-child(5){
+    animation: headerFade 0.4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    transition: transform 0.4s linear;
+}
+.columns:nth-child(6){
+    animation: fadeRight 0.4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    transition: transform 0.4s linear;
+}
+
 
 .columns .smallWebText{
     font-size: 19px;
@@ -924,6 +962,10 @@ hr{
 }
 
 /* PAGE 9 */
+#page9 .bigHero{
+    margin-bottom: 90px;
+    
+}
 label{
     color: white;
     text-align: left;
@@ -945,6 +987,7 @@ input[type="text"]{
     border: 0;
     padding: 5px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 input[type="number"]{
     background-color: transparent;
