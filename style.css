@@ -196,12 +196,15 @@ li:hover{
     transform: translateY(-50%);
     /* background-color: transparent; */
     backdrop-filter: blur(2px);
+    height: fit-content;
 
 }
 .flexTop{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 2px solid grey; */
+    height: 72px;
     
 }
 .flexTop img{
