@@ -19,6 +19,8 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
+    right: 0px;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,8 +99,8 @@ body{
 
 
 .body-overlay{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1000;
     position: fixed;
     top: 0;
@@ -127,6 +129,26 @@ body{
     /* width: fit-content; */
     
 }
+.menu{
+    position: fixed;
+    top: 10vh;
+    right: 76px;
+    background-color: rgb(37, 38, 39);
+    border-radius: 50%;
+    /* display: block; */
+    text-align: center;
+    padding: 10px;
+    height: fit-content;
+    border: 1px solid grey;
+    /* width: fit-content; */
+
+}
+.menu img{
+    margin: 1px 0px;
+    width: 50px;
+    padding: 6px;
+
+}
 .glow{
     /* width: 40px; */
     margin: 5px 14px;
@@ -141,9 +163,7 @@ body{
 }
 li img{
     margin: 1px 0px;
-    width: 34px;
-    border: 0px solid grey;
-    border-radius: 100%;
+    width: 30px;
     padding: 6px;
 }
 li:hover{
@@ -183,6 +203,9 @@ li:hover{
     justify-content: space-between;
     align-items: center;
     
+}
+.flexTop img{
+    width: 150px;
 }
 .flexTop p{
     color: white;
@@ -276,6 +299,7 @@ main{
 }
 #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9{
     width: 1016px;
+    max-width: 100%;
     padding-left: min(10em, 7%);
     padding-right: min(10em, 7%);
     padding-bottom: 70px;
@@ -1037,18 +1061,23 @@ input[type="text"]{
     padding: 5px;
     font-size: 20px;
     margin-bottom: 20px;
+    color: white;
 }
 input[type="number"]{
     background-color: transparent;
     border: 0;
     padding: 5px;
     font-size: 20px;
+    color: white;
+
 }
 textarea{
     background-color: transparent;
     border: 0;
     padding: 5px;
     font-size: 20px;
+    color: white;
+
 }
 .greenSubmit{
     display: flex;
@@ -1085,7 +1114,7 @@ textarea{
         max-width: 80%;
         margin: 0;
         margin: auto;
-        width: 80%;
+        width: 100%;
         height: fit-content;
         
         left: 0;
@@ -1135,7 +1164,7 @@ textarea{
    #hero{
         position: relative;
         padding-bottom: 50px;
-        max-width: 80%;
+        /* max-width: 100%; */
         margin: 0;
         margin: auto;
         width: 100%;
@@ -1151,21 +1180,31 @@ textarea{
         max-width: 80%;
         margin: 0;
         margin: auto;
-        width: 80%;
+        width: 100%;
+        padding: 0;
         border: 1px solid white;
-
-
-    }    body{
-        overflow-x: hidden;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }    
+    section{
+        margin: 0;
+    }
+    
+    body{
+        /* overflow-x: hidden; */
     }
     main{
         width: 100%;
-        text-align: center;
-        width: 100%;
+        /* text-align: center; */
         padding: 0;
         margin: 0;
+        border: 1px solid yellow;
 
     }
-    
+     .slimNav{
+        display: none;
+        width: 0px;
+    }
 
 }
