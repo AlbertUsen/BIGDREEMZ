@@ -197,6 +197,7 @@ li:hover{
     /* background-color: transparent; */
     backdrop-filter: blur(2px);
     height: fit-content;
+    margin: 10px 0;
 
 }
 .flexTop{
@@ -209,6 +210,7 @@ li:hover{
 }
 .flexTop img{
     width: 150px;
+    /* border: 2px solid red; */
 }
 .flexTop p{
     color: white;
@@ -225,7 +227,7 @@ li:hover{
 }
 .webText{
     color: grey ;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.9vw, 7rem);
     margin-bottom: 30px;
     text-align: left;
 
@@ -281,7 +283,7 @@ li:hover{
     background-color: rgb(40, 233, 140);
     cursor: pointer;
     border: 1px solid rgb(40, 233, 140);
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 
 }
 .greenButton:hover{
@@ -309,6 +311,10 @@ main{
     margin: 0 auto;
 
 
+}
+.toProjects{
+    background-color: transparent;
+    border: 0px;
 }
 
 .tinyHeader{
@@ -395,7 +401,7 @@ h1{
 }
 
 h2{
-    font-size: 80px;
+    font-size: clamp(3rem, 4vw, 7rem);
     color: rgb(40, 233, 140);
     margin-bottom: 10px;
     font-weight: 100;
@@ -501,7 +507,7 @@ h3{
     animation: headerFade 0.4s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
-    transition: transform 0.4s linear;
+    transition: border 0.4s linear;
 
 }
 .servicesRow:hover{
@@ -520,11 +526,13 @@ h3{
 }
 .smallWebText{
     color: white;
-    font-size: 17px;
+    font-size: 13px;
 }
 .servicesRow .webText{
     margin-bottom: 17px;
-    font-size: 18px;
+        font-size: clamp(14px, 18px, 9px);
+        line-height: 1.7;
+
 }
 
 /* PAGE 5 */
@@ -602,7 +610,7 @@ h3{
     margin-bottom: 20px;
     width: 40px;
 }
-.grenNumber{
+.greenNumber{
     color: rgb(40, 233, 140);
     font-size: 40px;
 }
@@ -649,12 +657,20 @@ h3{
     display: flex;
     justify-content: space-between;
     /* border: 2px solid yellow; */
+    gap: 20px;
+    margin-bottom: 120px;
+    /* flex-wrap: wrap; */
+    max-height: fit-content;
+
+
 
 }
 .ps1NoFlex, .ps2NoFlex{
     width: 100%;
     margin-bottom: 120px;
     /* max-width: fit-content; */
+    height: 450px;
+
     
 }
 #ps1, #ps2{
@@ -681,7 +697,7 @@ h3{
     transition: transform 0.4s linear;
 }
 .projectShort{
-    width: 90%;
+    width: 100%;
     /* border: 1px solid lime; */
 
 }
@@ -808,7 +824,9 @@ h3{
     to { opacity: 1; transform: translateY(0);}
     
 }
-
+#page7 .bigHero{
+    text-align: left;
+}
 
 .reviewerInfo{
     display: flex;
@@ -876,8 +894,7 @@ h3{
     font-size: 1.2em;
     background-color: transparent;
     transition: border-color 0.7s ease;
-    transition: color 0.3s ease-out;
-    
+    transition: border 0.4s linear;
     margin-bottom: 70px;
 }
 .prevB:hover{
@@ -983,13 +1000,14 @@ h3{
     animation: fadeLeft 0.4s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
-    transition: transform 0.4s linear;
+    transition: border 0.4s linear;
+
 }
 .prices:nth-child(2){
     animation: fadeRight 0.4s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
-    transition: transform 0.4s linear;
+    transition: border 0.4s linear;
 }
 .prices:hover{
     border: 1px solid rgb(40, 233, 140);
@@ -1093,7 +1111,7 @@ textarea{
     border-radius: 39px;
     background-color: rgb(40, 233, 140);
     cursor: pointer;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
     border: 1px solid rgb(40, 233, 140);
 
 }
@@ -1172,6 +1190,9 @@ textarea{
         margin: auto;
         width: 100%;
         height: fit-content;
+        padding: 50px 20px;
+        margin-top: 20px;
+
         
         left: 0;
         top: 0;
@@ -1179,13 +1200,14 @@ textarea{
 
 
     }
+    .heroDiv img{
+        width: 90%;
+    }
     #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9{
-        max-width: 80%;
+        max-width: 100%;
         margin: 0;
-        margin: auto;
         width: 100%;
-        padding: 0;
-        border: 1px solid white;
+        padding: 20px;
         position: relative;
         right: 0;
         bottom: 0;
@@ -1193,21 +1215,94 @@ textarea{
     section{
         margin: 0;
     }
-    
-    body{
-        /* overflow-x: hidden; */
-    }
     main{
         width: 100%;
-        /* text-align: center; */
         padding: 0;
         margin: 0;
-        border: 1px solid yellow;
 
     }
      .slimNav{
         display: none;
         width: 0px;
     }
+    .roundText{
+        display: block;
+    }
+    .bigHero{
+        font-size: 25px;
+        text-align: center;
+    }
+    .servicesRow {
+        padding: 30px;
+    }
+    .greenLogo .bigHero{
+        font-size: 20px;
+        text-align: center;
+    }
+    h3{
+        font-size: 40px;
+        
+    }
+    .greenLogo img{
+        height: 25px;
+    }
+    /* .serviceRow .webText{
+        font-size: 7px;
+    } */
+    .smallWebText{
+        font-size: 12px;
+    }
+    .servicesRow .webText{
+        line-break: 0;
+    }
+    .columns{
+        width: 170px;
+    }
 
+    /* PAGE 5 */
+    .greenNumber{
+    color: rgb(40, 233, 140);
+    font-size: 30px;
+    }
+    .columns .smallWebText{
+        font-size: 13px;
+    }
+
+    /* page 6 */
+
+    .sharedPort{
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+    .ps1NoFlex{
+        width: 100%;
+
+
+    }
+    /* PAGE 8 */
+    .pricesContainer{
+        display: block;
+    }
+    .prices{
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+    .typeSide{
+        font-size: 15px;
+    }
+    .priceDeets p{
+        font-size: 16px;
+    }
+    .smallWebText{
+        font-size: 15px;
+    }
+    /* PAGE 9 */
+    #page9{
+        text-align: left;
+    }
+    .formFlex{
+        display: block;
+    }
 }
