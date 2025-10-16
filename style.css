@@ -209,7 +209,7 @@ li:hover{
     
 }
 .flexTop img{
-    width: 150px;
+    width: 60px;
     /* border: 2px solid red; */
 }
 .flexTop p{
@@ -1255,17 +1255,24 @@ textarea{
     .servicesRow .webText{
         line-break: 0;
     }
-    .columns{
-        width: 170px;
-    }
-
     /* PAGE 5 */
+    .columns{
+        width: 140px;
+    }
+    .columns img{
+        /* width: 30px */
+    }
     .greenNumber{
     color: rgb(40, 233, 140);
-    font-size: 30px;
+    font-size: 27px;
     }
     .columns .smallWebText{
         font-size: 13px;
+    }
+    .tools{
+
+        height: 200px;
+        padding: 30px;
     }
 
     /* page 6 */
